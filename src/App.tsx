@@ -1,8 +1,8 @@
-import { Component, Fragment, h } from 'preact';
+import * as React from 'react';
 
-class App extends Component {
+class App extends React.Component {
   public render() {
-    return <Fragment>App</Fragment>;
+    return <React.Fragment>App</React.Fragment>;
   }
 }
 
