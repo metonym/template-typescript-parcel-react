@@ -1,5 +1,5 @@
 {
-  "name": "template-typescript-parcel-preact",
+  "name": "template-typescript-parcel-react",
   "version": "0.1.0",
   "license": "MIT",
   "description": "Template to develop Preact apps using Parcel",
