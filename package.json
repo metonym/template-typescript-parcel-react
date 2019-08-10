@@ -29,7 +29,6 @@
     "husky": "^3.0.3",
     "jest": "^24.8.0",
     "parcel": "^1.12.3",
-    "parcel-bundler": "^1.12.3",
     "parcel-plugin-linaria": "^0.1.2",
     "posthtml-expressions": "^1.1.1",
     "preact": "^10.0.0-rc.1",
