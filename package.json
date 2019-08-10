@@ -1,0 +1,58 @@
+{
+  "name": "template-typescript-parcel-preact",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "Template to develop Preact apps using Parcel",
+  "author": "Eric Liu (https://github.com/metonym)",
+  "scripts": {
+    "start": "parcel public/index.html",
+    "build": "rm -rf dist && parcel build public/index.html --no-source-maps",
+    "lint": "tslint --fix -p . -c tslint.json",
+    "test": "jest --coverage",
+    "test:tdd": "jest --watch"
+  },
+  "dependencies": {
+    "preact": "^10.0.0-rc.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.1.0",
+    "@commitlint/config-conventional": "^8.1.0",
+    "@types/jest": "^24.0.17",
+    "husky": "^3.0.3",
+    "jest": "^24.8.0",
+    "parcel-bundler": "^1.12.3",
+    "posthtml-expressions": "^1.1.1",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^1.11.1",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.18.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.5.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint && pretty-quick --staged",
+      "pre-push": "yarn test",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": true
+  },
+  "jest": {
+    "preset": "ts-jest"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "resolutions": {
+    "**/**/lodash": "^4.17.12",
+    "**/**/mixin-deep": "^2.0.1",
+    "**/**/safer-eval": "^1.3.4",
+    "**/**/set-value": "^3.0.1"
+  }
+}
