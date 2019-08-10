@@ -18,6 +18,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.3.3",
     "@commitlint/cli": "^8.1.0",
     "@commitlint/config-conventional": "^8.1.0",
@@ -33,7 +35,6 @@
     "preact": "^10.0.0-rc.1",
     "prettier": "^1.18.2",
     "pretty-quick": "^1.11.1",
-    "ts-jest": "^24.0.2",
     "tslint": "^5.18.0",
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.5.3"
@@ -44,7 +45,10 @@
   },
   "babel": {
     "presets": [
-      "@babel/preset-typescript"
+      "@babel/preset-env",
+      "@babel/preset-react",
+      "@babel/preset-typescript",
+      "linaria/babel"
     ]
   },
   "husky": {
@@ -58,9 +62,6 @@
     "tabWidth": 2,
     "semi": true,
     "singleQuote": true
-  },
-  "jest": {
-    "preset": "ts-jest"
   },
   "commitlint": {
     "extends": [
