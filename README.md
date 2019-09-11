@@ -3,7 +3,7 @@
 [![Build][build]][build-badge]
 [![Coverage][codecov-shield]][codecov]
 
-> Template to develop React apps using Parcel.
+> Template to build React apps using Parcel and optionally alias React to Preact X.
 
 ## Overview
 
