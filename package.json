@@ -66,5 +66,8 @@
     "extends": [
       "@commitlint/config-conventional"
     ]
+  },
+  "resolutions": {
+    "serialize-to-js": ">=2"
   }
 }
