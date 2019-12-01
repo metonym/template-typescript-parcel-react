@@ -5,27 +5,38 @@
 
 > Template to build React apps using Parcel and optionally alias React to Preact X.
 
-## Overview
+## Getting Started
 
-### Start
-
-```bash
-yarn start
-```
-
-### Build
+Clone the template:
 
 ```bash
-yarn build
+git clone git@github.com:metonym/template-typescript-parcel-react.git
+cd template-typescript-parcel-react
 ```
 
-### Test
-
-This command runs tests located in the `tests` folder.
+Install its dependencies:
 
 ```bash
-yarn test
+yarn install
 ```
+
+## Available Scripts
+
+### `yarn start`
+
+Runs the project in development mode and watches for any changes.
+
+### `yarn build`
+
+Builds the project for production. The build directory is `dist`; types will be written to `dist/index.d.ts`. Customize the build directory in the `outDir` configuration option in the [tsconfig.json](tsconfig.json).
+
+### `yarn test`
+
+Runs test suites and generates a coverage report.
+
+### `yarn test:tdd`
+
+Runs tests in Test-driven Development (TDD) mode.
 
 ## Linting, formatting and committing
 
