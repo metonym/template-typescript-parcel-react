@@ -28,7 +28,7 @@ Runs the project in development mode and watches for any changes.
 
 ### `yarn build`
 
-Builds the project for production. The build directory is `dist`; types will be written to `dist/index.d.ts`. Customize the build directory in the `outDir` configuration option in the [tsconfig.json](tsconfig.json).
+Builds the project for production.
 
 ### `yarn test`
 
