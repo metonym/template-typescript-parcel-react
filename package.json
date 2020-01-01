@@ -31,7 +31,7 @@
     "parcel": "^1.12.4",
     "parcel-plugin-linaria": "^0.1.2",
     "posthtml-expressions": "^1.1.1",
-    "preact": "^10.0.5",
+    "preact": "^10.1.1",
     "prettier": "^1.19.1",
     "pretty-quick": "^2.0.1",
     "rimraf": "^3.0.0",
