@@ -27,7 +27,7 @@
     "@types/react-dom": "^16.9.4",
     "husky": "^4.2.1",
     "jest": "^24.9.0",
-    "lint-staged": "^9.5.0",
+    "lint-staged": "^10.0.7",
     "parcel": "^1.12.4",
     "parcel-plugin-linaria": "^0.1.2",
     "posthtml-expressions": "^1.1.1",
