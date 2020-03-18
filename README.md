@@ -5,6 +5,15 @@
 
 > Template to build React apps using Parcel and optionally alias React to Preact X.
 
+This project aliases react to preact for smaller bundles. To opt out, remove the following field from [package.json](package.json):
+
+```json
+"alias": {
+  "react": "preact/compat",
+  "react-dom": "preact/compat"
+}
+```
+
 ## Getting Started
 
 Clone the template:
