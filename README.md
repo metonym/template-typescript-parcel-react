@@ -7,25 +7,21 @@
 
 This project aliases react to preact for smaller bundles. To opt out, remove the following field from [package.json](package.json):
 
-```json
-"alias": {
-  "react": "preact/compat",
-  "react-dom": "preact/compat"
-}
+```diff
+# package.json
+- "alias": {
+-  "react": "preact/compat",
+-  "react-dom": "preact/compat"
+- }
 ```
 
 ## Getting Started
 
-Clone the template:
+Clone the repo and install its dependencies.
 
 ```bash
 git clone git@github.com:metonym/template-typescript-parcel-react.git
 cd template-typescript-parcel-react
-```
-
-Install its dependencies:
-
-```bash
 yarn install
 ```
 
@@ -46,14 +42,6 @@ Runs test suites and generates a coverage report.
 ### `yarn test:tdd`
 
 Runs tests in Test-driven Development (TDD) mode.
-
-## Linting, formatting and committing
-
-To ensure that committed code follows conventions, this project uses `prettier`, `tslint` and git hooks (via `husky`) to automate the linting and formatting of code and commit messages.
-
-## Continuous Integration
-
-This template uses `Travis CI` to build and test remote changes.
 
 ## License
 
