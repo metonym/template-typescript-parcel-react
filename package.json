@@ -20,23 +20,15 @@
     "@babel/preset-env": "^7.8.7",
     "@babel/preset-react": "^7.8.3",
     "@babel/preset-typescript": "^7.8.3",
-    "@commitlint/cli": "^8.3.5",
-    "@commitlint/config-conventional": "^8.3.4",
     "@types/jest": "^25.1.4",
     "@types/react": "^16.9.23",
     "@types/react-dom": "^16.9.5",
-    "husky": "^4.2.3",
     "jest": "^25.1.0",
-    "lint-staged": "^10.0.8",
     "parcel": "^1.12.4",
     "parcel-plugin-linaria": "^0.1.2",
     "posthtml-expressions": "^1.1.1",
     "preact": "^10.3.4",
-    "prettier": "^1.19.1",
-    "pretty-quick": "^2.0.1",
     "rimraf": "^3.0.2",
-    "tslint": "^6.1.0",
-    "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.8.3"
   },
   "alias": {
@@ -49,27 +41,6 @@
       "@babel/preset-react",
       "@babel/preset-typescript",
       "linaria/babel"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged && pretty-quick --staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
-  "lint-staged": {
-    "*.{ts,tsx}": [
-      "tslint --fix -p ."
-    ]
-  },
-  "prettier": {
-    "tabWidth": 2,
-    "semi": true,
-    "singleQuote": true
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
     ]
   }
 }
