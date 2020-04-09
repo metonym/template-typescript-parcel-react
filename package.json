@@ -1,6 +1,6 @@
 {
   "name": "template-typescript-parcel-react",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "license": "MIT",
   "description": "Template to build React apps using Parcel and optionally alias React to Preact X",
   "author": "Eric Liu (https://github.com/metonym)",
